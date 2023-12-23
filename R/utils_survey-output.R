@@ -1,4 +1,4 @@
-#' Check survey metadata
+ia#' Check survey metadata
 #'
 #' Returns title/description HTML tags as needed.
 #'
@@ -91,7 +91,7 @@ button_placeholders <- function(page) {
   } else if (page == as.character(survey_env$num_pages)) {
     shiny::div(class = "survey-buttons",
                shiny::actionButton(paste0("previous-", page), "Previous", `page-action` = "previous"),
-               shiny::actionButton("submit", "Submit")
+               shiny::actionButton("submit", "Enviar")
     )
   }
 }
