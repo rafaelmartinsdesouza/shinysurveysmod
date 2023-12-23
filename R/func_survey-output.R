@@ -196,7 +196,7 @@ surveyOutput <- function(df, survey_title, survey_description, theme = "#63B8FF"
       lapply(survey_env$unique_questions, surveyOutput_individual),
       shiny::div(class = "survey-buttons",
                  shiny::actionButton("submit",
-                                     "Submit",
+                                     "Enviar",
                                      ...)
       )
     )
