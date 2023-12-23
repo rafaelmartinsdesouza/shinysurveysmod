@@ -76,7 +76,7 @@ button_placeholders <- function(page) {
   # If there's only one page, just display submit button
   if (page == "1" && length(unique(survey_env$question_df$page)) == 1) {
     shiny::div(class = "survey-buttons",
-               shiny::actionButton("submit", "Submit")
+               shiny::actionButton("submit", "Enviar")
     )
 
   } else if (page == "1" && length(unique(survey_env$question_df$page)) != 1) {
